@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="50dp"
+    android:paddingLeft="10dp"
+    android:id = "@+id/Title"
+    android:textColor="#ffffff"
+    android:background="@color/Gree"
+    android:textSize="25dp"
+    android:singleLine="true"
+    tools:text="Ahmed Ezzat"
+    android:layout_margin="0dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <ImageView
+            android:scaleType="center"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/img"
+            android:layout_weight="0.63" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Date"
+                android:textSize="30sp"
+                android:paddingBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Time"
+                android:textSize="20sp"
+                android:paddingBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Rate"
+                android:textSize="10sp"
+                android:textColor="@color/Black"
+                android:paddingBottom="10dp"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Mark as Favorite"
+                android:id="@+id/favo"
+                android:background="@color/Gree"
+                android:textColor="@color/White"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/OverView"
+        android:paddingBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ"
+        android:textAlignment="center"
+        android:paddingBottom="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trailers :"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:id="@+id/url1"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_media_play"
+                android:layout_marginRight="80dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/White"
+                android:text="Trial 1"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/url2"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_gravity="center"
+            android:layout_marginRight="80dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:layout_gravity="center"
+            android:text="Trial 2"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ"
+        android:textAlignment="center"
+        android:paddingBottom="5dp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews :"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviews"/>
+</LinearLayout>
+</ScrollView>
